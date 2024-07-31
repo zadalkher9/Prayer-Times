@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@200..900&display=swap');
+
+/*font-family: "Lalezar", system-ui;                        ||| #EC66FE   */
+
+
+
+*{
+    font-family: "Mada", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+    background-color: #333131;
+    width: 100%;
+    padding: 20px 150px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4285C5  ;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    justify-content: center;
+}
+.cities select{
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #4285C5 ;
+    background-color: #333131;
+    color: #4285C5 ;
+    border-radius: 1.6rem;
+    margin-left: 5px;
+}
+
+.main-sec{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.main-sec #cityName{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.main-sec #date{
+    color: #4285C5 ;
+    
+}
+.main-sec #duaa{
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 2.4rem;
+}
+.paryerTimes{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 14rem;
+}
+
+.paryerTimes .first-row div , .second-row div{
+    width: 200px;
+    height: 320px;
+    color: white;
+    border-radius: 1.4rem;
+    font-size: 3rem;
+    
+}
+
+.fajr{
+    background-image: url(image/fajr2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.sunrise{
+    background-image: url(image/sunrise2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.dhuhr{
+    background-image: url(image/dhuhr2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.asr{
+    background-image: url(image/asr2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.maghrib{
+    background-image: url(image/maghrib2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.isha{
+    background-image: url(image/isha2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.first-row , .second-row{
+    display: flex;
+    gap: 60px;
+}
+
+.footer{
+    margin-top: 50px;
+    color: #4285C5;
+    text-align: center;
+}
+
+
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 20px 80px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 20px 50px;
+    }
+    .nav {
+        flex-direction: row;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    .nav .logo{
+        font-size: .7rem;
+    }
+    .cities select {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    
+    .main-sec{
+        height: 90vh;
+        margin-bottom: 10rem;
+    }
+    .main-sec #cityName {
+        font-size: 3rem;
+    }
+    .main-sec #duaa {
+        font-size: 1.8rem;
+    }
+    .paryerTimes{
+        height: 110vh;
+        margin-bottom: 25rem;
+    }
+    .paryerTimes .first-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .paryerTimes .second-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .paryerTimes .first-row div, .second-row div {
+        width: 150px;
+        height: 250px;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-sec{
+        height: 100vh;
+        margin-bottom: 12rem;
+    }
+    
+    .paryerTimes .first-row, .paryerTimes .second-row {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .paryerTimes .first-row div, .second-row div {
+        width: 100px;
+        height: 180px;
+        font-size: 1.5rem;
+    }
+    .main-sec #cityName {
+        font-size: 2rem;
+    }
+    .main-sec #duaa {
+        font-size: 1.4rem;
+    }
+}

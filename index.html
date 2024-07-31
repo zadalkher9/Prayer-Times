@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>   
+    <link rel="stylesheet" href="style.css">
+    <title>صلاتي</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+       <div class="nav">
+        <div class="logo">
+            <i class="fa-solid fa-mosque fa-2xl" style="color: #4285C5;"></i>
+            <h1>صلاتي</h1>
+            
+        </div>
+
+        <div class="cities">          
+              <select name="city" id="city" >
+                <option disabled selected>اختر المدينة</option>
+              </select>
+        </div> 
+       </div>
+
+       <div class="main-sec">
+        <div class="mainInfo">
+            <h1 id="cityName">الكويت</h1>
+            <span id="date"> الثلاثاء |25 يونيو 2024 | 19 ذو الحجة 1445</span>
+            <p id="duaa">اللهم اجعلني مقيم الصلاة ومن ذريتي، ربنا وتقبل دعاء. اللهم اغفر لي ولوالدي وللمؤمنين يوم يقوم الحساب.</p>
+        </div>
+        </div>
+
+        <div class="paryerTimes">
+            <div class="first-row">
+                <div class="dhuhr">
+                    <h4>الظهر</h4>
+                    <h4 id="dhuhr-time"></h4>
+                </div>
+
+                <div class="sunrise">
+                    <h4>الشروق</h4>
+                    <h4 id="sunrise-time"></h4>
+                </div>
+
+                <div class="fajr">
+                    <h4>الفجر</h4>
+                    <h4 id="fajr-time"></h4>
+                </div>
+
+              
+            </div>
+            <div class="second-row">
+                <div class="isha">
+                    <h4>العشاء</h4>
+                    <h4 id="isha-time"></h4>
+                </div>
+
+                <div class="maghrib">
+                    <h4>المغرب</h4>
+                    <h4 id="maghrib-time"></h4>
+                </div>
+
+                <div class="asr">
+                    <h4>العصر</h4>
+                    <h4 id="asr-time"></h4>
+                </div>
+            </div>
+
+
+       </div>
+
+     <footer class="footer">
+        <p>&copy; 2024 - صنع بحب من قبل المهندسة زاد الخير.</p>
+    </footer>
+
+    </div>   
+
+    <script src="main.js"></script>
+</body>
+</html>
